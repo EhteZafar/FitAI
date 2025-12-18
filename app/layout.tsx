@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "FitAi - Find Your Perfect Fit",
   description:
     "AI-powered virtual try-on technology that helps you find the perfect fit every time. Upload photos and see how clothing will fit before you buy.",
+  icons: {
+    icon: "/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png",
+    apple: "/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png",
+  },
 };
 
 export default function RootLayout({
