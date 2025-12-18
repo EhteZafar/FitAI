@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-16">
+    <footer className="bg-gray-900 dark:bg-gray-950 text-gray-300 py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
@@ -53,22 +53,34 @@ export function Footer() {
             <h3 className="text-white mb-4">Product</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   API
                 </a>
               </li>
@@ -79,22 +91,34 @@ export function Footer() {
             <h3 className="text-white mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Press Kit
                 </a>
               </li>
@@ -105,22 +129,34 @@ export function Footer() {
             <h3 className="text-white mb-4">Support</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Help Center
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="hover:text-white dark:hover:text-cyan-400 transition"
+                >
                   Terms of Service
                 </a>
               </li>

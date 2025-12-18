@@ -3,10 +3,11 @@
 import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { motion } from "framer-motion";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Hero() {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-cyan-50 to-white">
+    <div className="relative overflow-hidden bg-gradient-to-b from-cyan-50 to-white dark:from-gray-800 dark:to-gray-900">
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
@@ -21,22 +22,23 @@ export function Hero() {
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#features"
-              className="text-gray-700 hover:text-cyan-600 transition"
+              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition"
             >
               Features
             </a>
             <a
               href="#how-it-works"
-              className="text-gray-700 hover:text-cyan-600 transition"
+              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition"
             >
               How It Works
             </a>
             <a
               href="#contact"
-              className="text-gray-700 hover:text-cyan-600 transition"
+              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition"
             >
               Contact Us
             </a>
+            <ThemeToggle />
             <button className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-lg hover:shadow-lg transition">
               Get Started
             </button>
@@ -52,17 +54,17 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="inline-block px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full mb-6">
+            <div className="inline-block px-4 py-2 bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-300 rounded-full mb-6">
               <span>✨ 40% Reduction in Returns</span>
             </div>
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl mb-6">
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl mb-6 dark:text-white">
               Find Your{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-pink-500 to-yellow-500">
                 Perfect Fit
               </span>{" "}
               Before You Buy
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               Upload two photos and see how any clothing item will fit you. Say
               goodbye to returns and sizing uncertainty with our AI-powered
               virtual try-on solution.
@@ -72,7 +74,7 @@ export function Hero() {
                 Try It Free
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-cyan-400 hover:text-cyan-600 transition">
+              <button className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:border-cyan-400 hover:text-cyan-600 dark:hover:border-cyan-500 dark:hover:text-cyan-400 transition">
                 Watch Demo
               </button>
             </div>
@@ -91,8 +93,8 @@ export function Hero() {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute top-10 -left-10 w-64 h-64 bg-cyan-200 rounded-full blur-3xl opacity-50"></div>
-            <div className="absolute bottom-10 -right-10 w-64 h-64 bg-cyan-300 rounded-full blur-3xl opacity-40"></div>
+            <div className="absolute top-10 -left-10 w-64 h-64 bg-cyan-200 dark:bg-cyan-800 rounded-full blur-3xl opacity-50 dark:opacity-30"></div>
+            <div className="absolute bottom-10 -right-10 w-64 h-64 bg-cyan-300 dark:bg-cyan-700 rounded-full blur-3xl opacity-40 dark:opacity-30"></div>
           </motion.div>
         </div>
       </div>

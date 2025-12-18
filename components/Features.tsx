@@ -58,7 +58,7 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-20 lg:py-32 bg-white">
+    <section id="features" className="py-20 lg:py-32 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <motion.div
           className="text-center max-w-3xl mx-auto mb-16"
@@ -67,10 +67,10 @@ export function Features() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl lg:text-5xl mb-6">
+          <h2 className="text-4xl lg:text-5xl mb-6 dark:text-white">
             Why Choose <span className="text-cyan-500">FitAi</span>?
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             Transform your online shopping experience with cutting-edge AI
             technology that eliminates sizing guesswork.
           </p>
@@ -80,7 +80,7 @@ export function Features() {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="p-8 rounded-2xl border-2 border-gray-200 hover:border-cyan-400 hover:shadow-xl transition bg-white"
+              className="p-8 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-400 dark:hover:border-cyan-500 hover:shadow-xl transition bg-white dark:bg-gray-800"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -98,8 +98,10 @@ export function Features() {
               >
                 <feature.icon className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl mb-3 dark:text-white">{feature.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                {feature.description}
+              </p>
             </motion.div>
           ))}
         </div>

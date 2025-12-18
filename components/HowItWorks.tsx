@@ -28,7 +28,7 @@ export function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="py-20 lg:py-32 bg-gradient-to-b from-white to-cyan-50"
+      className="py-20 lg:py-32 bg-gradient-to-b from-white to-cyan-50 dark:from-gray-900 dark:to-gray-800"
     >
       <div className="container mx-auto px-6">
         <motion.div
@@ -38,14 +38,14 @@ export function HowItWorks() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl lg:text-5xl mb-6">
+          <h2 className="text-4xl lg:text-5xl mb-6 dark:text-white">
             How{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500">
               FitAi
             </span>{" "}
             Works
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             Get your perfect fit in just three simple steps. It&apos;s fast,
             accurate, and incredibly easy.
           </p>
@@ -77,15 +77,17 @@ export function HowItWorks() {
                   <span className="text-cyan-600">{index + 1}</span>
                 </div>
               </div>
-              <h3 className="text-2xl mb-4">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
+              <h3 className="text-2xl mb-4 dark:text-white">{step.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                {step.description}
+              </p>
             </motion.div>
           ))}
         </div>
 
         {/* Visual Example */}
         <motion.div
-          className="bg-white rounded-3xl shadow-2xl p-8 lg:p-12"
+          className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 lg:p-12"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -93,25 +95,31 @@ export function HowItWorks() {
         >
           <div className="relative">
             <div
-              className="rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-cyan-100 to-pink-100 flex items-center justify-center"
+              className="rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-cyan-100 to-pink-100 dark:from-cyan-900 dark:to-pink-900 flex items-center justify-center"
               style={{ minHeight: "400px" }}
             >
               <div className="text-center p-8">
-                <Upload className="w-16 h-16 mx-auto mb-4 text-cyan-600" />
-                <p className="text-xl text-gray-700">Virtual Try-On Preview</p>
-                <p className="text-gray-500 mt-2">
+                <Upload className="w-16 h-16 mx-auto mb-4 text-cyan-600 dark:text-cyan-400" />
+                <p className="text-xl text-gray-700 dark:text-gray-200">
+                  Virtual Try-On Preview
+                </p>
+                <p className="text-gray-500 dark:text-gray-400 mt-2">
                   Upload your photos to see the perfect fit
                 </p>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+            <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                   <CheckCircle className="w-6 h-6 text-green-600" />
                 </div>
                 <div>
-                  <div className="text-sm text-gray-600">Perfect Match</div>
-                  <div className="text-green-600">Size M Recommended</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">
+                    Perfect Match
+                  </div>
+                  <div className="text-green-600 dark:text-green-400">
+                    Size M Recommended
+                  </div>
                 </div>
               </div>
             </div>

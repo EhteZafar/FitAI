@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function CTA() {
   return (
-    <section className="py-20 lg:py-32 bg-white">
+    <section className="py-20 lg:py-32 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <motion.div
           className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-cyan-500 to-cyan-600 p-12 lg:p-20 shadow-2xl"
