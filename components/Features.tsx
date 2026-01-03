@@ -58,29 +58,32 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-20 lg:py-32 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-6">
+    <section
+      id="features"
+      className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-32 bg-white dark:bg-gray-900"
+    >
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl lg:text-5xl mb-6 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 dark:text-white">
             Why Choose <span className="text-cyan-500">FitAi</span>?
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300">
             Transform your online shopping experience with cutting-edge AI
             technology that eliminates sizing guesswork.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="p-8 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-400 dark:hover:border-cyan-500 hover:shadow-xl transition bg-white dark:bg-gray-800"
+              className="p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-400 dark:hover:border-cyan-500 hover:shadow-xl transition bg-white dark:bg-gray-800"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -96,10 +99,12 @@ export function Features() {
                     : "from-yellow-400 to-yellow-600"
                 } rounded-lg flex items-center justify-center mb-4 shadow-md`}
               >
-                <feature.icon className="w-6 h-6 text-white" />
+                <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 className="text-xl mb-3 dark:text-white">{feature.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <h3 className="text-lg sm:text-xl mb-2 sm:mb-3 dark:text-white">
+                {feature.title}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                 {feature.description}
               </p>
             </motion.div>

@@ -5,83 +5,90 @@ import { motion } from "framer-motion";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-6">
+    <section
+      id="contact"
+      className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-32 bg-white dark:bg-gray-900"
+    >
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl lg:text-5xl mb-6 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 dark:text-white">
             Get in <span className="text-cyan-500">Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300">
             Have questions? We&apos;d love to hear from you. Send us a message
             and we&apos;ll respond as soon as possible.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <motion.div
-            className="space-y-8"
+            className="space-y-6 sm:space-y-8"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-gradient-to-br from-pink-50 to-yellow-50 dark:from-pink-900/20 dark:to-yellow-900/20 p-8 rounded-2xl">
-              <h3 className="text-2xl mb-6 dark:text-white">
+            <div className="bg-gradient-to-br from-pink-50 to-yellow-50 dark:from-pink-900/20 dark:to-yellow-900/20 p-6 sm:p-8 rounded-xl sm:rounded-2xl">
+              <h3 className="text-xl sm:text-2xl mb-4 sm:mb-6 dark:text-white">
                 Contact Information
               </h3>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-white" />
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
                   <div>
-                    <div className="text-gray-600 dark:text-gray-400 mb-1">
+                    <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
                       Email
                     </div>
-                    <div className="text-lg dark:text-gray-200">
+                    <div className="text-base sm:text-lg dark:text-gray-200">
                       contact@fitai.com
                     </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-white" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
                   <div>
-                    <div className="text-gray-600 dark:text-gray-400 mb-1">
+                    <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
                       Phone
                     </div>
-                    <div className="text-lg dark:text-gray-200">
+                    <div className="text-base sm:text-lg dark:text-gray-200">
                       +491234567891
                     </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-white" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-yellow-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
                   <div>
-                    <div className="text-gray-600 dark:text-gray-400 mb-1">
+                    <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
                       Office
                     </div>
-                    <div className="text-lg dark:text-gray-200">
+                    <div className="text-base sm:text-lg dark:text-gray-200">
                       Saxony, Dresden
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="p-8 bg-gradient-to-br from-cyan-500 to-cyan-600 text-white rounded-2xl">
-              <h3 className="text-2xl mb-3">Business Hours</h3>
-              <p className="text-cyan-100 mb-4">We&apos;re here to help you!</p>
-              <div className="space-y-2">
+            <div className="p-6 sm:p-8 bg-gradient-to-br from-cyan-500 to-cyan-600 text-white rounded-xl sm:rounded-2xl">
+              <h3 className="text-xl sm:text-2xl mb-2 sm:mb-3">
+                Business Hours
+              </h3>
+              <p className="text-sm sm:text-base text-cyan-100 mb-3 sm:mb-4">
+                We&apos;re here to help you!
+              </p>
+              <div className="space-y-2 text-sm sm:text-base">
                 <div className="flex justify-between">
                   <span className="text-cyan-100">Monday - Friday</span>
                   <span>9:00 AM - 6:00 PM</span>
@@ -100,17 +107,17 @@ export function Contact() {
 
           {/* Contact Form */}
           <motion.div
-            className="bg-gray-50 dark:bg-gray-800 p-8 lg:p-10 rounded-2xl border-2 border-gray-200 dark:border-gray-700"
+            className="bg-gray-50 dark:bg-gray-800 p-6 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl border-2 border-gray-200 dark:border-gray-700"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <form className="space-y-6">
+            <form className="space-y-4 sm:space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Full Name <span className="text-pink-500">*</span>
                 </label>
@@ -126,7 +133,7 @@ export function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Email Address <span className="text-pink-500">*</span>
                 </label>
@@ -142,7 +149,7 @@ export function Contact() {
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Phone Number
                 </label>
@@ -157,7 +164,7 @@ export function Contact() {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Subject <span className="text-pink-500">*</span>
                 </label>
@@ -173,7 +180,7 @@ export function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-2"
                 >
                   Message <span className="text-pink-500">*</span>
                 </label>
