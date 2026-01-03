@@ -71,7 +71,7 @@ export function Features() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 dark:text-white">
-            Why Choose <span className="text-cyan-500">FitAi</span>?
+            Why Choose <span className="text-cyan-500">FitAI</span>?
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300">
             Transform your online shopping experience with cutting-edge AI

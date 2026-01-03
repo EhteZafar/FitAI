@@ -171,7 +171,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 dark:border-gray-700 pt-6 sm:pt-8 text-center text-gray-400 text-sm sm:text-base">
-          <p>&copy; 2025 FitAi. All rights reserved.</p>
+          <p>&copy; 2025 FitAI. All rights reserved.</p>
         </div>
       </div>
     </footer>

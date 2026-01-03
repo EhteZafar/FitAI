@@ -41,7 +41,7 @@ export function HowItWorks() {
           <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 dark:text-white">
             How{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500">
-              FitAi
+              FitAI
             </span>{" "}
             Works
           </h2>

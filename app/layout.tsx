@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FitAi - Find Your Perfect Fit",
+  title: "FitAI - Find Your Perfect Fit",
   description:
     "AI-powered virtual try-on technology that helps you find the perfect fit every time. Upload photos and see how clothing will fit before you buy.",
   icons: {
