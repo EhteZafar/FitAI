@@ -3,6 +3,7 @@
 import { ArrowRight, Calendar, Play, Sparkles, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "../ThemeToggle";
+import { ShareButton } from "../ShareButton";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -68,6 +69,9 @@ export function BusinessHero() {
             >
               For Shoppers
             </Link>
+            <div className="hidden md:block">
+              <ShareButton />
+            </div>
             <ThemeToggle />
           </div>
         </div>

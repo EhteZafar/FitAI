@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
+import { ShareButton } from "./ShareButton";
 import Link from "next/link";
 
 export function AudienceSelector() {
@@ -73,6 +74,13 @@ export function AudienceSelector() {
               <Play className="w-4 h-4" />
               Watch Demo
             </motion.button>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              <ShareButton />
+            </motion.div>
             <ThemeToggle />
           </div>
         </div>

@@ -4,6 +4,7 @@ import { ArrowRight, Play, Sparkles, X } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "../ThemeToggle";
+import { ShareButton } from "../ShareButton";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -70,6 +71,9 @@ export function ShopperHero() {
             >
               For Businesses
             </Link>
+            <div className="hidden md:block">
+              <ShareButton />
+            </div>
             <ThemeToggle />
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import { Facebook, Twitter, Instagram, Linkedin, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import { ShareButton } from "./ShareButton";
 
 export function Footer() {
   return (
@@ -40,6 +41,9 @@ export function Footer() {
                 MVP Coming Soon
               </span>
             </motion.div>
+            <div className="mb-4">
+              <ShareButton />
+            </div>
             <div className="flex gap-3 sm:gap-4">
               <a
                 href="#"
