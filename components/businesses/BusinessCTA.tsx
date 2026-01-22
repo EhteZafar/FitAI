@@ -21,16 +21,17 @@ export function BusinessCTA() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-            Ready to Test Our Technology?
+            Join Our Early Partner Program
           </h2>
           <p className="text-xl sm:text-2xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Become an early partner and help shape the future of virtual try-on
+            Our MVP is currently in development. Be among the first clothing
+            retailers to get notified when we launch.
           </p>
 
           {/* Benefits */}
           <div className="grid sm:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
             {[
-              "Free MVP access",
+              "Free MVP testing",
               "Early partner pricing",
               "Shape the product",
             ].map((benefit, i) => (
@@ -48,25 +49,29 @@ export function BusinessCTA() {
             ))}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <motion.button
-              className="px-10 py-5 bg-white text-blue-600 rounded-lg font-bold text-lg hover:shadow-2xl transition flex items-center justify-center gap-3 group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Calendar className="w-6 h-6" />
-              Schedule a Demo
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
-            </motion.button>
-            <motion.button
-              className="px-10 py-5 border-2 border-white text-white rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Free Trial
-            </motion.button>
-          </div>
+          {/* Email Signup */}
+          <motion.div
+            className="max-w-md mx-auto mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                placeholder="Enter your business email"
+                className="flex-1 px-6 py-4 rounded-lg text-gray-900 font-medium focus:outline-none focus:ring-2 focus:ring-white/50"
+              />
+              <button className="px-8 py-4 bg-gray-900 text-white rounded-lg font-bold hover:bg-gray-800 transition flex items-center justify-center gap-2 whitespace-nowrap">
+                Get Notified
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
+            <p className="text-sm text-blue-100 mt-3 text-center">
+              💡 MVP launching soon • Be the first to know
+            </p>
+          </motion.div>
 
           {/* Stats */}
           <motion.div

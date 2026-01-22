@@ -62,12 +62,6 @@ export function BusinessHero() {
             >
               Solutions
             </a>
-            <a
-              href="#pricing"
-              className="hidden sm:block text-sm lg:text-base text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition"
-            >
-              Pricing
-            </a>
             <Link
               href="/shoppers"
               className="hidden md:block text-sm lg:text-base text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition"
@@ -75,9 +69,6 @@ export function BusinessHero() {
               For Shoppers
             </Link>
             <ThemeToggle />
-            <button className="px-4 lg:px-6 py-2 lg:py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm lg:text-base rounded-lg hover:shadow-lg transition font-semibold btn-innovative">
-              Request Demo
-            </button>
           </div>
         </div>
       </nav>
@@ -105,28 +96,32 @@ export function BusinessHero() {
               </span>
             </motion.div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4 sm:mb-6 leading-tight dark:text-white font-bold">
+              Reduce{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-500 to-cyan-500 animate-gradient">
-                AI-Powered
+                Clothing Returns
               </span>{" "}
-              Virtual Try-On for Fashion Retailers
+              by 40% with AI
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto">
-              Revolutionary sizing technology designed to reduce returns by 40%
-              and boost conversions. Partner with us to shape the future of
-              fashion retail.
+              Give your customers accurate clothing size recommendations with
+              our AI-powered body measurement technology. Available as in-store
+              kiosks or online API integration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-base sm:text-lg rounded-lg hover:shadow-xl transition font-semibold flex items-center justify-center gap-2 btn-innovative animate-pulse-glow">
-                <Calendar className="w-5 h-5" />
-                Request Demo
-              </button>
               <button
                 onClick={() => setVideoOpen(true)}
-                className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-base sm:text-lg rounded-lg hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-500 dark:hover:text-blue-400 transition font-semibold flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-base sm:text-lg rounded-lg hover:shadow-xl transition font-semibold flex items-center justify-center gap-2 btn-innovative animate-pulse-glow"
               >
                 <Play className="w-5 h-5" />
                 Watch Demo Video
               </button>
+              <a
+                href="#early-partner"
+                className="px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-base sm:text-lg rounded-lg hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-500 dark:hover:text-blue-400 transition font-semibold flex items-center justify-center gap-2"
+              >
+                <ArrowRight className="w-5 h-5" />
+                Join Early Partner Program
+              </a>
             </div>
           </motion.div>
 

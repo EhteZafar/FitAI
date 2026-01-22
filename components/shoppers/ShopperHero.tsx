@@ -71,9 +71,6 @@ export function ShopperHero() {
               For Businesses
             </Link>
             <ThemeToggle />
-            <button className="px-4 lg:px-6 py-2 lg:py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-sm lg:text-base rounded-lg hover:shadow-lg transition btn-innovative">
-              Join Waitlist
-            </button>
           </div>
         </div>
       </nav>
@@ -97,32 +94,33 @@ export function ShopperHero() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </span>
               <span className="text-cyan-700 dark:text-cyan-300 font-medium">
-                🚀 MVP Coming Soon • Join the Waitlist
+                🚀 MVP Coming Soon
               </span>
             </motion.div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-4 sm:mb-6 leading-tight dark:text-white font-bold">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-pink-500 to-yellow-500 animate-gradient">
-                Try On Clothes Virtually
-              </span>
-              , Shop With Confidence
+                Virtual Fitting Room
+              </span>{" "}
+              for Your Clothes
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-              Experience the future of online shopping. Our AI-powered sizing
-              prototype gives you instant, accurate size recommendations across
-              multiple clothing brands.
+              Find your perfect clothing size with AI. Get accurate body
+              measurements and personalized size recommendations for any
+              garment—instantly.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <button className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-sm sm:text-base rounded-lg hover:shadow-xl transition flex items-center justify-center gap-2 font-semibold btn-innovative animate-pulse-glow">
-                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
-                Join Waitlist
-              </button>
               <button
                 onClick={() => setVideoOpen(true)}
-                className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm sm:text-base rounded-lg hover:border-cyan-400 hover:text-cyan-600 dark:hover:border-cyan-500 dark:hover:text-cyan-400 transition w-full sm:w-auto flex items-center justify-center gap-2"
+                className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-sm sm:text-base rounded-lg hover:shadow-xl transition flex items-center justify-center gap-2 font-semibold btn-innovative"
               >
                 <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                 Watch Demo
               </button>
+              <a href="#how-it-works">
+                <button className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm sm:text-base rounded-lg hover:border-cyan-400 hover:text-cyan-600 dark:hover:border-cyan-500 dark:hover:text-cyan-400 transition w-full sm:w-auto">
+                  How It Works
+                </button>
+              </a>
             </div>
           </motion.div>
 

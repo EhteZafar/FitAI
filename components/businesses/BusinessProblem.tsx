@@ -22,11 +22,11 @@ export function BusinessProblem() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 dark:text-white">
             The Hidden Cost of{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
-              Poor Sizing
+              Wrong Clothing Sizes
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Size uncertainty is killing your bottom line
+            Clothing size uncertainty is costing fashion retailers billions
           </p>
         </motion.div>
 
@@ -126,11 +126,12 @@ export function BusinessProblem() {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <h3 className="text-2xl sm:text-3xl font-bold mb-3">
-            What if you could solve all of this with one integration?
+            What if you could eliminate clothing size confusion entirely?
           </h3>
           <p className="text-lg sm:text-xl text-blue-100">
-            FitAI reduces returns, increases conversions, and improves customer
-            satisfaction—all in one solution
+            FitAI gives every customer accurate body measurements and
+            personalized clothing size recommendations—reducing returns,
+            increasing conversions, and boosting satisfaction
           </p>
         </motion.div>
       </div>

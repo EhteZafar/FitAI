@@ -1,29 +1,44 @@
 "use client";
 
-import { Upload, Scan, ShoppingCart } from "lucide-react";
+import { Monitor, Globe, Zap, Camera, Ruler, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
 
-const steps = [
+const options = [
   {
-    icon: Upload,
-    title: "Upload Two Photos",
+    icon: Monitor,
+    title: "In-Store Kiosk",
     description:
-      "Take a front and side photo, fully clothed. Takes just 30 seconds.",
+      "Use our smart kiosks in participating stores. Scan yourself, browse products, and tap 'Check Fit' to get instant size recommendations.",
     color: "from-cyan-400 to-cyan-600",
+    badge: "Physical Stores",
   },
   {
-    icon: Scan,
-    title: "Get Your Measurements",
+    icon: Globe,
+    title: "Online Shopping",
     description:
-      "Our AI analyzes 15+ body points with 95% accuracy, instantly.",
+      "Shop from home with our web integration. Upload your photos once, then get perfect fit recommendations across all partner brands.",
     color: "from-pink-400 to-pink-600",
+    badge: "Web & Mobile",
+  },
+];
+
+const process = [
+  {
+    icon: Camera,
+    title: "Capture Your Profile",
+    description: "Take front and side photos (fully clothed). Just 30 seconds.",
   },
   {
-    icon: ShoppingCart,
-    title: "Shop With Confidence",
+    icon: Ruler,
+    title: "AI Analyzes Your Body",
     description:
-      "See your exact size across 100+ brands. No more guessing or returns.",
-    color: "from-yellow-400 to-yellow-600",
+      "Our AI measures your neck, chest, waist, hips, and 15+ other body points with 95% accuracy.",
+  },
+  {
+    icon: ShoppingBag,
+    title: "Get Perfect Size",
+    description:
+      "Browse any clothing item and tap 'Check Fit' to see your recommended size. No more guessing!",
   },
 ];
 
@@ -31,7 +46,7 @@ export function ShopperHowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="py-12 sm:py-16 md:py-20 lg:py-28 bg-white dark:bg-gray-900"
+      className="py-12 sm:py-16 md:py-20 lg:py-28 bg-gradient-to-b from-white to-cyan-50/30 dark:from-gray-900 dark:to-gray-800"
     >
       <div className="container mx-auto px-4 sm:px-6">
         <motion.div
@@ -42,61 +57,107 @@ export function ShopperHowItWorks() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 dark:text-white font-bold">
-            Get Your Perfect Fit in{" "}
+            Two Ways to{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500">
-              30 Seconds
+              Find Your Perfect Fit
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300">
-            Simple, fast, and incredibly accurate. No measurements needed.
+            Whether you're shopping in-store or online, FitAI has you covered
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-12 sm:mb-16">
-          {steps.map((step, index) => (
+        {/* Two Options */}
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20 max-w-5xl mx-auto">
+          {options.map((option, index) => (
             <motion.div
               key={index}
-              className="text-center"
+              className="relative bg-white dark:bg-gray-800 rounded-2xl sm:rounded-3xl p-8 sm:p-10 border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-400 dark:hover:border-cyan-500 hover:shadow-2xl transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
+              whileHover={{ y: -5 }}
             >
-              <div className="relative inline-block mb-4 sm:mb-6">
-                <div
-                  className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center shadow-xl`}
-                >
-                  <step.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-7 h-7 sm:w-8 sm:h-8 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg border-2 border-gray-100 dark:border-gray-700">
-                  <span className="text-sm sm:text-base text-cyan-600 dark:text-cyan-400 font-bold">
-                    {index + 1}
-                  </span>
-                </div>
+              {/* Badge */}
+              <div className="absolute top-6 right-6 px-3 py-1 bg-gradient-to-r from-cyan-100 to-pink-100 dark:from-cyan-900/50 dark:to-pink-900/50 rounded-full text-xs font-medium text-cyan-700 dark:text-cyan-300">
+                {option.badge}
               </div>
-              <h3 className="text-xl sm:text-2xl mb-3 sm:mb-4 dark:text-white font-semibold">
-                {step.title}
+
+              <div
+                className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${option.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}
+              >
+                <option.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl mb-4 dark:text-white font-bold">
+                {option.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                {step.description}
+              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                {option.description}
               </p>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA */}
+        {/* How It Works Process */}
+        <div className="max-w-4xl mx-auto">
+          <motion.h3
+            className="text-2xl sm:text-3xl md:text-4xl text-center mb-10 sm:mb-12 dark:text-white font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            How It Works
+          </motion.h3>
+
+          <div className="grid sm:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
+            {process.map((step, index) => (
+              <motion.div
+                key={index}
+                className="text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+              >
+                <div className="relative inline-block mb-4 sm:mb-6">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-xl">
+                    <step.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-7 h-7 sm:w-8 sm:h-8 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg border-2 border-gray-100 dark:border-gray-700">
+                    <span className="text-sm sm:text-base text-yellow-600 dark:text-yellow-400 font-bold">
+                      {index + 1}
+                    </span>
+                  </div>
+                </div>
+                <h4 className="text-xl sm:text-2xl mb-3 sm:mb-4 dark:text-white font-semibold">
+                  {step.title}
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
+                  {step.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Key Feature Highlight */}
         <motion.div
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          className="mt-16 sm:mt-20 max-w-3xl mx-auto bg-gradient-to-r from-cyan-500 to-pink-500 rounded-2xl p-8 sm:p-10 text-center text-white shadow-2xl"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0.6 }}
         >
-          <button className="px-8 sm:px-10 py-4 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-base sm:text-lg rounded-lg hover:shadow-xl transition font-semibold">
-            Start Now - It's Free
-          </button>
-          <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-            No account required • Works on any device
+          <Zap className="w-12 h-12 mx-auto mb-4" />
+          <h3 className="text-2xl sm:text-3xl font-bold mb-3">
+            AI-Powered Precision
+          </h3>
+          <p className="text-base sm:text-lg text-white/90">
+            Our technology analyzes your unique body measurements including neck
+            size, chest, waist, hips, and more to recommend the perfect size for
+            every garment.
           </p>
         </motion.div>
       </div>

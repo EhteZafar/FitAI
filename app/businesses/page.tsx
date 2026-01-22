@@ -3,7 +3,6 @@ import { BusinessProblem } from "@/components/businesses/BusinessProblem";
 import { BusinessSolutions } from "@/components/businesses/BusinessSolutions";
 import { BusinessFeatures } from "@/components/businesses/BusinessFeatures";
 import { BusinessROI } from "@/components/businesses/BusinessROI";
-import { BusinessPricing } from "@/components/businesses/BusinessPricing";
 import { BusinessCTA } from "@/components/businesses/BusinessCTA";
 import { Footer } from "@/components/Footer";
 
@@ -15,7 +14,6 @@ export default function BusinessesPage() {
       <BusinessSolutions />
       <BusinessFeatures />
       <BusinessROI />
-      <BusinessPricing />
       <BusinessCTA />
       <Footer />
     </div>
