@@ -1,8 +1,9 @@
 "use client";
 
-import { Play, X, Sparkles } from "lucide-react";
+import { Play, X, Sparkles, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 export function VideoDemo() {
   const [isOpen, setIsOpen] = useState(false);
@@ -131,6 +132,60 @@ export function VideoDemo() {
               </div>
               <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                 Predictions
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Interactive Demo CTA */}
+          <motion.div
+            className="max-w-4xl mx-auto mt-12 sm:mt-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-r from-cyan-500 via-pink-500 to-yellow-500 p-8 sm:p-10 shadow-2xl">
+              {/* Animated Background Elements */}
+              <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 animate-pulse"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full -ml-32 -mb-32 animate-pulse delay-1000"></div>
+              </div>
+
+              <div className="relative z-10 text-center">
+                <motion.div
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-4 border border-white/30"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Zap className="w-4 h-4 text-white" />
+                  <span className="text-sm font-medium text-white">
+                    Try It Yourself
+                  </span>
+                </motion.div>
+
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">
+                  Experience FitAI Interactive Demo
+                </h3>
+                <p className="text-white/90 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
+                  Upload your photos and see how our AI technology measures your
+                  body, recommends perfect sizes, and transforms your shopping
+                  experience in real-time.
+                </p>
+
+                <Link href="/demo">
+                  <motion.button
+                    className="px-8 py-4 bg-white text-white bg-clip-text bg-gradient-to-r from-cyan-500 via-pink-500 to-yellow-500 rounded-xl font-bold text-lg inline-flex items-center gap-3 hover:shadow-2xl transition-shadow shadow-xl"
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Sparkles className="w-5 h-5 text-cyan-500" />
+                    Launch Interactive Demo
+                    <Zap className="w-5 h-5 text-pink-500" />
+                  </motion.button>
+                </Link>
+
+                <p className="mt-4 text-white/70 text-sm">
+                  No signup required • Fully functional • Takes 2 minutes
+                </p>
               </div>
             </div>
           </motion.div>

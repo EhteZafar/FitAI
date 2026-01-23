@@ -1,10 +1,11 @@
 "use client";
 
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
 import { useState } from "react";
+import Link from "next/link";
 
 export function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -41,6 +42,13 @@ export function Hero() {
             >
               Contact Us
             </a>
+            <Link
+              href="/demo"
+              className="text-sm lg:text-base text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 font-medium hover:opacity-80 transition flex items-center gap-1"
+            >
+              <Sparkles className="w-4 h-4 text-cyan-500" />
+              Try Demo
+            </Link>
             <ThemeToggle />
             <button className="px-4 lg:px-6 py-2 lg:py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-sm lg:text-base rounded-lg hover:shadow-lg transition">
               Get Started
@@ -95,6 +103,14 @@ export function Hero() {
                 >
                   Contact Us
                 </a>
+                <Link
+                  href="/demo"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 font-medium py-2 flex items-center gap-2"
+                >
+                  <Sparkles className="w-4 h-4 text-cyan-500" />
+                  Try Demo
+                </Link>
                 <button className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-lg hover:shadow-lg transition text-center">
                   Get Started
                 </button>
@@ -132,9 +148,12 @@ export function Hero() {
                 Try It Free
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
-              <button className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm sm:text-base rounded-lg hover:border-cyan-400 hover:text-cyan-600 dark:hover:border-cyan-500 dark:hover:text-cyan-400 transition">
-                Watch Demo
-              </button>
+              <Link
+                href="/demo"
+                className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm sm:text-base rounded-lg hover:border-cyan-400 hover:text-cyan-600 dark:hover:border-cyan-500 dark:hover:text-cyan-400 transition text-center"
+              >
+                Try Interactive Demo
+              </Link>
             </div>
           </motion.div>
 
