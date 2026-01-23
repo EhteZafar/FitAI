@@ -73,6 +73,7 @@ const productsData: Record<
     description:
       "Modern slim-fit jeans crafted from premium stretch denim. Features a comfortable mid-rise waist and tapered leg.",
     category: "Jeans",
+    image: "/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png",
     colors: [
       { name: "Blue", hex: "#3B82F6" },
       { name: "Black", hex: "#000000" },
@@ -98,6 +99,7 @@ const productsData: Record<
     description:
       "Versatile casual blazer perfect for both office and weekend wear. Features a slim fit with stretch comfort.",
     category: "Blazers",
+    image: "/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png",
     colors: [
       { name: "Navy", hex: "#1E3A5F" },
       { name: "Charcoal", hex: "#374151" },
@@ -122,6 +124,7 @@ const productsData: Record<
     description:
       "Ultra-soft cotton-blend hoodie with a relaxed fit. Features a kangaroo pocket and adjustable drawstring hood.",
     category: "Hoodies",
+    image: "/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png",
     colors: [
       { name: "Gray", hex: "#6B7280" },
       { name: "Black", hex: "#000000" },
@@ -147,6 +150,7 @@ const productsData: Record<
     description:
       "Classic chino pants with a modern slim fit. Made from lightweight cotton twill for all-day comfort.",
     category: "Pants",
+    image: "/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png",
     colors: [
       { name: "Khaki", hex: "#C2A878" },
       { name: "Navy", hex: "#1E3A5F" },
@@ -172,6 +176,7 @@ const productsData: Record<
     description:
       "Timeless polo shirt crafted from breathable cotton piqué. Features a classic collar and two-button placket.",
     category: "Polos",
+    image: "/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png",
     colors: [
       { name: "White", hex: "#FFFFFF" },
       { name: "Navy", hex: "#1E3A5F" },
