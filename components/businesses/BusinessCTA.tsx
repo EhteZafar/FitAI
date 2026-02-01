@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, ArrowRight, CheckCircle } from "lucide-react";
+import { Calendar, ArrowRight, CheckCircle, BarChart3 } from "lucide-react";
+import Link from "next/link";
 
 export function BusinessCTA() {
   return (
@@ -51,7 +52,7 @@ export function BusinessCTA() {
 
           {/* Email Signup */}
           <motion.div
-            className="max-w-md mx-auto mb-12"
+            className="max-w-md mx-auto mb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -70,6 +71,26 @@ export function BusinessCTA() {
             </div>
             <p className="text-sm text-blue-100 mt-3 text-center">
               💡 MVP launching soon • Be the first to know
+            </p>
+          </motion.div>
+
+          {/* Analytics Button */}
+          <motion.div
+            className="mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <Link href="/businesses/analytics">
+              <button className="px-8 py-4 bg-white/10 border-2 border-white/50 text-white rounded-lg font-bold hover:bg-white/20 transition flex items-center justify-center gap-2 mx-auto backdrop-blur-sm">
+                <BarChart3 className="w-5 h-5" />
+                View Detailed Analytics & ROI
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </Link>
+            <p className="text-sm text-blue-100 mt-3 text-center">
+              📊 Complete financial projections & investor metrics
             </p>
           </motion.div>
 
