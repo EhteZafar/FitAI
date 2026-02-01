@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 // Mock product data
 const products = [
@@ -139,6 +140,7 @@ export default function CataloguePage() {
                 0
               </span>
             </div>
+            <ThemeToggle />
           </div>
         </div>
       </header>

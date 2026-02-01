@@ -19,7 +19,7 @@ export function Footer() {
             <div className="inline-block bg-gradient-to-br from-cyan-400 via-pink-400 to-yellow-400 p-1 rounded-2xl mb-4 shadow-2xl">
               <div className="bg-gray-900 dark:bg-gray-950 rounded-2xl p-3 sm:p-4">
                 <img
-                  src="/assets/d0c09af98181b3febb2241c75f60c335a9ddfd5f.png"
+                  src="/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png"
                   alt="FitAI Logo"
                   className="h-16 sm:h-20 md:h-24 w-auto"
                 />

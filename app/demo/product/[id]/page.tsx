@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 // Mock product data
 const productsData: Record<
@@ -323,9 +324,12 @@ export default function ProductPage({
               </span>
             </div>
           </div>
-          <div className="px-3 py-1 bg-green-100 dark:bg-green-900/50 rounded-full text-xs font-medium text-green-700 dark:text-green-300 flex items-center gap-1">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            Profile Active
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 bg-green-100 dark:bg-green-900/50 rounded-full text-xs font-medium text-green-700 dark:text-green-300 flex items-center gap-1">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              Profile Active
+            </div>
+            <ThemeToggle />
           </div>
         </div>
       </header>

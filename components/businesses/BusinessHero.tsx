@@ -50,7 +50,7 @@ export function BusinessHero() {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/assets/FitAI_logo_transparent.png"
+                src="/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png"
                 alt="FitAI Logo"
                 className="h-12 sm:h-14 md:h-16 w-auto"
               />

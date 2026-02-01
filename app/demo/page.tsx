@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 // Mock measurement results
 const mockMeasurements = {
@@ -72,11 +73,14 @@ export default function DemoPage() {
               FitAI <span className="text-cyan-500">Demo</span>
             </span>
           </Link>
-          <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-            <span className="hidden sm:inline">Interactive Demo</span>
+          <div className="flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+              <span className="hidden sm:inline">Interactive Demo</span>
+            </div>
             <div className="px-3 py-1 bg-gradient-to-r from-cyan-100 to-pink-100 dark:from-cyan-900/50 dark:to-pink-900/50 rounded-full text-xs font-medium text-cyan-700 dark:text-cyan-300">
               Mock Mode
             </div>
+            <ThemeToggle />
           </div>
         </div>
       </header>

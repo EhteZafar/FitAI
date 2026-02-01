@@ -16,7 +16,7 @@ export function Hero() {
       <nav className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
         <div className="flex items-center justify-between">
           <motion.img
-            src="/assets/FitAI_logo_transparent.png"
+            src="/assets/d9822f1023325578d86c6d2dea01a43b91bc3531.png"
             alt="FitAI Logo"
             className="h-16 sm:h-20 md:h-24 w-auto"
             initial={{ opacity: 0, x: -20 }}

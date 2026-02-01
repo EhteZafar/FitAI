@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function BusinessAnalyticsPage() {
   return (
@@ -24,8 +25,11 @@ export default function BusinessAnalyticsPage() {
             <ArrowLeft className="w-5 h-5" />
             <span className="font-semibold">Back to Business Overview</span>
           </Link>
-          <div className="px-4 py-2 bg-gradient-to-r from-cyan-100 to-pink-100 dark:from-cyan-900/50 dark:to-pink-900/50 rounded-full text-sm font-medium text-cyan-700 dark:text-cyan-300">
-            Investor Analytics
+          <div className="flex items-center gap-3">
+            <div className="px-4 py-2 bg-gradient-to-r from-cyan-100 to-pink-100 dark:from-cyan-900/50 dark:to-pink-900/50 rounded-full text-sm font-medium text-cyan-700 dark:text-cyan-300">
+              Investor Analytics
+            </div>
+            <ThemeToggle />
           </div>
         </div>
       </header>
