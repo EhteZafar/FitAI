@@ -393,6 +393,228 @@ export default function BusinessAnalyticsPage() {
           </div>
         </motion.section>
 
+        {/* Scale Strategy Section */}
+        <motion.section
+          className="mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
+              <TrendingUp className="w-6 h-6 text-white" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold dark:text-white">
+              Go-to-Market Scale Strategy
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Phase 1 */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border-2 border-blue-500 dark:border-blue-600">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                  1
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    MVP & Early Adopters
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Months 1-6
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="font-semibold text-blue-700 dark:text-blue-300 mb-1">
+                    Target: 25-35 Beta Customers
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>• Independent boutiques & DTC brands</li>
+                    <li>• Direct Shopify/WooCommerce outreach</li>
+                    <li>• Fashion tech accelerators</li>
+                  </ul>
+                </div>
+                <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                  <div className="font-semibold text-green-700 dark:text-green-300 mb-1">
+                    Key Milestones
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>✓ 25 beta customers (free tier)</li>
+                    <li>✓ 10 Early Partner conversions (€369/mo)</li>
+                    <li>✓ 95%+ accuracy validation</li>
+                    <li>✓ &lt;48h integration time</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 2 */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border-2 border-purple-500 dark:border-purple-600">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold">
+                  2
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    Product-Market Fit
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Months 7-18
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                  <div className="font-semibold text-purple-700 dark:text-purple-300 mb-1">
+                    Target: 120 Paying Customers
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>• Mid-market retailers (50-500 employees)</li>
+                    <li>• Multi-brand department stores</li>
+                    <li>• Fast fashion chains (5-20 locations)</li>
+                  </ul>
+                </div>
+                <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                  <div className="font-semibold text-green-700 dark:text-green-300 mb-1">
+                    Key Milestones
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>✓ €3.0M ARR</li>
+                    <li>✓ 5 enterprise pilot programs</li>
+                    <li>✓ 20 kiosk units deployed</li>
+                    <li>✓ Unit economics profitability</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 3 */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border-2 border-pink-500 dark:border-pink-600">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold">
+                  3
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    Market Expansion
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Months 19-36
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="p-3 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
+                  <div className="font-semibold text-pink-700 dark:text-pink-300 mb-1">
+                    Target: 350+ Customers
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>• Enterprise chains (500+ employees)</li>
+                    <li>• International markets (EU, Asia-Pacific)</li>
+                    <li>• Adjacent verticals (sportswear, luxury)</li>
+                  </ul>
+                </div>
+                <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                  <div className="font-semibold text-green-700 dark:text-green-300 mb-1">
+                    Key Milestones
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>✓ €11.6M ARR</li>
+                    <li>✓ 3-5 enterprise contracts (€92K+ ACV)</li>
+                    <li>✓ 150 kiosks deployed</li>
+                    <li>✓ Expand to 3 international markets</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 4 */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 border-2 border-orange-500 dark:border-orange-600">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold">
+                  4
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    Market Leadership
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Years 3-5
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+                  <div className="font-semibold text-orange-700 dark:text-orange-300 mb-1">
+                    Industry Standard for Virtual Fitting
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>• Acquire smaller competitors</li>
+                    <li>• Vertical integration (AR try-on)</li>
+                    <li>• Platform play (3rd party developers)</li>
+                    <li>• Data network effects</li>
+                  </ul>
+                </div>
+                <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                  <div className="font-semibold text-green-700 dark:text-green-300 mb-1">
+                    Key Milestones
+                  </div>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                    <li>✓ 1,200+ customers</li>
+                    <li>✓ €42.7M+ ARR</li>
+                    <li>✓ 40% market share (SMB segment)</li>
+                    <li>✓ 500+ kiosks globally</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Competitive Advantages */}
+          <div className="mt-8 bg-gradient-to-r from-cyan-500 to-pink-500 p-6 rounded-2xl text-white shadow-xl">
+            <h3 className="text-xl font-bold mb-4">
+              Competitive Moat & Advantages
+            </h3>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                <div className="font-bold mb-2">🛡️ Technology Moat</div>
+                <ul className="text-sm space-y-1 opacity-90">
+                  <li>• Only 2 photos required vs 3D scanning</li>
+                  <li>• 95%+ accuracy with continuous improvement</li>
+                  <li>• Privacy-first (no photo storage)</li>
+                </ul>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                <div className="font-bold mb-2">🌐 Network Effects</div>
+                <ul className="text-sm space-y-1 opacity-90">
+                  <li>• More users = better AI accuracy</li>
+                  <li>• Platform approach (3rd party integrations)</li>
+                  <li>• Cross-store shopping profile</li>
+                </ul>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                <div className="font-bold mb-2">🔒 Switching Costs</div>
+                <ul className="text-sm space-y-1 opacity-90">
+                  <li>• Deep platform integration (API, webhooks)</li>
+                  <li>• White-label customization lock-in</li>
+                  <li>• Proven ROI makes switching risky</li>
+                </ul>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                <div className="font-bold mb-2">🚀 First-Mover Advantage</div>
+                <ul className="text-sm space-y-1 opacity-90">
+                  <li>• Early e-commerce platform partnerships</li>
+                  <li>• Brand recognition in fashion tech</li>
+                  <li>• Customer success case studies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
         {/* Pricing Strategy Section */}
         <motion.section
           className="mb-16"
