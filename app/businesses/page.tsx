@@ -4,6 +4,7 @@ import { BusinessSolutions } from "@/components/businesses/BusinessSolutions";
 import { BusinessFeatures } from "@/components/businesses/BusinessFeatures";
 import { BusinessROI } from "@/components/businesses/BusinessROI";
 import { BusinessCTA } from "@/components/businesses/BusinessCTA";
+import { ComparisonMatrix } from "@/components/ComparisonMatrix";
 import { Footer } from "@/components/Footer";
 
 export default function BusinessesPage() {
@@ -13,6 +14,7 @@ export default function BusinessesPage() {
       <BusinessProblem />
       <BusinessSolutions />
       <BusinessFeatures />
+      <ComparisonMatrix />
       <BusinessROI />
       <BusinessCTA />
       <Footer />
